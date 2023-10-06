@@ -30,15 +30,28 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+.pro{
+    display: flex;
+    justify-content: flex-end;
+}
 .profile-side {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
 }
-.profile-side > img {
-  width: 98%; /* Each image takes 25% of the width */
-  height: 100%; /* 100% of the parent div's height (30% of the viewport height) */
+.profile-side > .avatar {
+  width: 30%; /* Each image takes 25% of the width */
+  
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+.profile-side > .cart-top {
+  width: 15%; /* Each image takes 25% of the width */
+ height: 40%;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;

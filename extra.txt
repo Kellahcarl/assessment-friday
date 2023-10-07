@@ -1,0 +1,41 @@
+
+/* .image-grid {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+   flex-wrap: wrap; 
+  width: 50%;
+  float: left;
+} */
+
+.main-image {
+  flex: 0 0 70%; /* 70% height */
+  width: 100%; /* 100% width */
+  position: relative;
+  overflow: hidden;
+}
+.main-image > img {
+  width: 98%; /* Each image takes 25% of the width */
+  height: 100%; /* 100% of the parent div's height (30% of the viewport height) */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+.thumbnails {
+  flex: 0 0 30%; /* 30% height */
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly between images */
+  width: 100%; /* 100% width */
+  align-items: center; /* Hide overflowing content if necessary */
+}
+.thumbnails > img {
+  width: 20%; /* Each image takes 25% of the width */
+  /* height: 80%;  */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -85,30 +85,35 @@
             />
           </div>
         </div>
-        <div class="text-box">
-          <div class="text-header"><p>SNEAKER COMPANY</p></div>
-          <div class="text-bold"><h1>Fall Limited Edition Sneakers</h1></div>
-          <div class="text-content">
-            <p>
-              These low-profile sneakers are your perfect casual wear companion.
-              Featuring a durable rubber outer sole, they’ll withstand
-              everything the weather can offer.
-            </p>
-          </div>
-          <div class="text-price">
-            <h3>$125.00</h3>
-            <p>50%</p>
-            <p>$250.00</p>
-          </div>
-          <div class="add-to-cart">
-            <img src="/images/icon-minus.svg" alt="" /> 0
-            <img src="/images/icon-plus.svg" alt="" /><button
-              class="button"
-              type="submit"
-            >
-              <img src="/images/icon-cart.svg" alt="" />
-              <p>Add To Cart</p>
-            </button>
+        <div class="text-box col-2">
+          <p class="above__title">SNEAKER COMPANY</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="para">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <ul class="price">
+            <li id="price__one">$125.00<span>50%</span></li>
+            <li id="price__two"><del>$250.00</del></li>
+          </ul>
+          <div class="cart">
+            <ul class="number-of-items">
+              <li>
+                <img
+                  src="images/icon-minus.svg"
+                  alt="decreasing items number button"
+                />
+              </li>
+
+              <li>
+                <img src="images/icon-plus.svg" alt="adding items button" />
+              </li>
+            </ul>
+            <div class="cart-button">
+              <img src="images/icon-cart-white.svg" alt="" aria-hidden="true" />
+              <p class="add__paragraph">Add to cart</p>
+            </div>
           </div>
         </div>
       </section>
@@ -116,9 +121,11 @@
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Caleb Baraka Kellah</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a href="https://github.com/Kellahcarl/assessment-friday.git"
+        >Caleb Baraka Kellah</a
+      >.
     </div>
   </body>
 </html>

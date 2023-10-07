@@ -18,58 +18,76 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <a href="#" aria-label="sneakers page"
+        ><img src="images/logo.svg" alt="" aria-hidden="true" />
+        <span class="sr-only">Sneakers</span>
+      </a>
+      <nav>
+        <ul id="nav" class="nav">
+          <li><a href="#" aria-label="collections">Collections</a></li>
+          <li><a href="#" aria-label="men">Men</a></li>
+          <li><a href="#" aria-label="women">Women</a></li>
+          <li><a href="#" aria-label="about">About</a></li>
+          <li><a href="#" aria-label="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="header-left">
+        <li class="cart__li">
+          <img
+            src="images/icon-cart.svg"
+            alt=" cart"
+            id="add-to-cart"
+            class="add__to-cart"
+          />
+          <p id="num-items" class="num-items"></p>
+        </li>
+        <li class="image__li">
+          <a href="#" aria-label="your account">
+            <img src="images/image-avatar.png" alt="" aria-hidden="true"
+          /></a>
+        </li>
+      </ul>
+    </header>
     <main>
-      <nav class="top">
-        <div class="heading"><h1>Sneakers</h1></div>
-        <div class="nav-options">
-          <p>Collections</p>
-          <p>Men</p>
-          <p>Women</p>
-          <p>About</p>
-          <p>Contact</p>
-          <div class="pro">
-            <div class="profile-side">
-              <img class="cart-top" src="/images/icon-cart.svg" alt="" />
-              <img class="avatar" src="/images/image-avatar.png" alt="" />
+      <div class="container">
+        <div class="container">
+          <div class="image-grid">
+            <div class="main-image">
+              <img src="/images/image-product-1.jpg" alt="" />
+            </div>
+            <div class="thumbnails">
+              <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+              <img src="/images/image-product-2-thumbnail.jpg" alt="" />
+              <img src="/images/image-product-3-thumbnail.jpg" alt="" />
+              <img src="/images/image-product-4-thumbnail.jpg" alt="" />
             </div>
           </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="image-grid">
-          <div class="main-image">
-            <img src="/images/image-product-1.jpg" alt="" />
-          </div>
-          <div class="thumbnails">
-            <img src="/images/image-product-1-thumbnail.jpg" alt="" />
-            <img src="/images/image-product-2-thumbnail.jpg" alt="" />
-            <img src="/images/image-product-3-thumbnail.jpg" alt="" />
-            <img src="/images/image-product-4-thumbnail.jpg" alt="" />
-          </div>
-        </div>
-        <div class="text-box">
-          <div class="text-header"><p>SNEAKER COMPANY</p></div>
-          <div class="text-bold"><h1>Fall Limited Edition Sneakers</h1></div>
-          <div class="text-content">
-            <p>
-              These low-profile sneakers are your perfect casual wear companion.
-              Featuring a durable rubber outer sole, they’ll withstand
-              everything the weather can offer.
-            </p>
-          </div>
-          <div class="text-price">
-            <h3>$125.00</h3>
-            <p>50%</p>
-            <p>$250.00</p>
-          </div>
-          <div class="add-to-cart">
-            <img src="/images/icon-minus.svg" alt="" /> 0
-            <img src="/images/icon-plus.svg" alt="" /><button
-              class="button"
-              type="submit"
-            >
-              <img src="/images/icon-cart.svg" alt="" /> <p>Add To Cart</p>
-            </button>
+          <div class="text-box">
+            <div class="text-header"><p>SNEAKER COMPANY</p></div>
+            <div class="text-bold"><h1>Fall Limited Edition Sneakers</h1></div>
+            <div class="text-content">
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="text-price">
+              <h3>$125.00</h3>
+              <p>50%</p>
+              <p>$250.00</p>
+            </div>
+            <div class="add-to-cart">
+              <img src="/images/icon-minus.svg" alt="" /> 0
+              <img src="/images/icon-plus.svg" alt="" /><button
+                class="button"
+                type="submit"
+              >
+                <img src="/images/icon-cart.svg" alt="" />
+                <p>Add To Cart</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
